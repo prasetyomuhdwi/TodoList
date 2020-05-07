@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, "sans-serif";
+}
+body {
+  background-color: #ffe0af;
+}
+.warp {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 380px;
+  height: 520px;
+  border-radius: 20px;
+  background-color: #7e9be5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .background {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 20px 20px 0 0;
+  background-image: url(../wallpaper.png);
+}
+.card .tambahRencana {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 80px;
+  width: 100%;
+}
+.card .tambahRencana input {
+  height: 40px;
+  width: 80%;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  border: 1px;
+}
+#tambah {
+  height: 40px;
+  width: 15%;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  font-size: 35px;
+  background-color: #ffa600;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+#tambah:hover {
+  background-color: #02ff41;
+}
+.list {
+  width: 85%;
+  height: 60%;
+  padding: 10px;
+  overflow: auto;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.804);
+}
+.judul {
+  width: 170px;
+  font-size: 20px;
+}
+.todo .cek,
+.todo .del {
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+.todo i.cek:hover {
+  color: #ffa600;
+}
+.todo i.del:hover {
+  color: #ffa600;
+}
+.todo i.cek:active {
+  transform: translateY(8px);
+}
+.todo i.del:active {
+  transform: translateY(8px);
+}
+.todo:hover i.cek,
+.todo:hover i.del {
+  opacity: 1;
+}
